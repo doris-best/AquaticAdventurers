@@ -1,0 +1,233 @@
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  font-family: 'Comic Sans MS', cursive;
+  width: 100%;
+  height: 100%;
+
+}
+
+.svg-container {
+  position: relative;
+  width: 1440px;
+  height: 870px;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.up-image,
+.down-image {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.up-image {
+  top: 0;
+}
+
+.down-image {
+  bottom: 0;
+}
+
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+    position: absolute;
+    top: 2px; /* 调整标题距离顶部的距离 */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; /* 设置标题颜色 */
+    font-size: 36px; /* 设置标题字体大小 */
+    z-index: 1; /* 确保标题在上层 */
+  }
+
+.content{
+    position: absolute;
+    width: 1000px;
+    height: 630px;
+    top: 120px; /* 调整标题距离顶部的距离 */
+    left: 50%;
+    transform: translateX(-50%);
+    color: aliceblue;
+    /* background-color: black; */
+    padding: 20px;
+}
+
+.description {
+    position: absolute;
+    top: 300px; /* 调整标题距离顶部的距离 */
+    width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 36px;
+    text-align: center;
+  }
+  
+  .button-container {
+    position: absolute;
+    top: 500px; /* 调整标题距离顶部的距离 */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .yes-button{
+    width: 160px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .no-button {
+    width: 160px;
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color:red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .yes-button:hover,
+  .no-button:hover {
+    background-color:lightblue;
+  }
+
+  .yes-button:focus,
+  .no-button:focus {
+    background-color:gray
+  }
+  
+
+  .warning{
+    position: absolute;
+    top: 550px; /* 调整标题距离顶部的距离 */
+    width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: lightcoral;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .watercycle{
+    position: absolute;
+    left: 50%;
+    top: 350px;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 300px;;
+    object-fit: cover;
+  }
+  
+  .icon {
+    /* 添加适当的样式，例如颜色、大小等 */
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 800px; /* 调整标题距离顶部的距离 */
+    left: 33%;
+    transform: translateX(-50%);
+    display: flex;
+    text-decoration: none; /* 去掉下划线 */
+  }
+
+  .icon2 {
+    /* 添加适当的样式，例如颜色、大小等 */
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 800px; /* 调整标题距离顶部的距离 */
+    left: 43%;
+    transform: translateX(-50%);
+    display: flex;
+    text-decoration: none; /* 去掉下划线 */
+  }
+
+  .icon3 {
+    /* 添加适当的样式，例如颜色、大小等 */
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 800px; /* 调整标题距离顶部的距离 */
+    left: 53%;
+    transform: translateX(-50%);
+    display: flex;
+    text-decoration: none; /* 去掉下划线 */
+  }
+
+
+  .icon4 {
+    /* 添加适当的样式，例如颜色、大小等 */
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 800px; /* 调整标题距离顶部的距离 */
+    left: 63%;
+    transform: translateX(-50%);
+    display: flex;
+    text-decoration: none; /* 去掉下划线 */
+  }
+
+  .icon:hover,
+.icon2:hover,
+.icon3:hover,
+.icon4:hover {
+  color: lightblue;
+}
+
+  
+  .importgif{
+    width: 400px;
+    height: 170px;
+    left: 50%;
+    transform: translateX(70%);
+  }
+
+  .gpmpic {
+    width: 800px;
+    height: 440px;
+    left: 50%;
+    transform: translateX(25%); 
+  }
+  
+  @keyframes shake {
+    0% { transform: translateX(25%); }
+    25% { transform: translateX(24%) rotate(0.1deg); }
+    50% { transform: translateX(26%) rotate(-0.1deg); }
+    75% { transform: translateX(24%) rotate(0.1deg); }
+    100% { transform: translateX(25%); }
+  }
+  
+  .gpmpic:hover {
+    animation: shake 400ms infinite; /* 将持续时间缩短到400毫秒 */
+  }
+  
+  
+
+  
